@@ -1,0 +1,28 @@
+{
+  "author": "Francisco Tavares de Lima Neto",
+  "contributors": [],
+  "description": "👜Emits the interleaved values of the given iterables",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^1.1.2",
+    "tape": "^4.10.0"
+  },
+  "keywords": [
+    "callbag"
+  ],
+  "license": "MIT",
+  "main": "index.cjs.js",
+  "module": "index.js",
+  "name": "callbag-interleave",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscotln/callbag-interleave.git"
+  },
+  "scripts": {
+    "build": "rollup $npm_package_module -o $npm_package_main --f cjs",
+    "pretest": "npm run build",
+    "test": "tape test.js",
+    "prepare": "npm test"
+  },
+  "version": "1.0.0"
+}
